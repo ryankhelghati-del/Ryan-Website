@@ -8,22 +8,35 @@
 
     <style>
         body {
-            zoom: 150%;;
+            zoom: 150%;
             background-color: rgb(0, 0, 0);
             font-family: Arial;
             color: white;
         }
 
         div {
-            color: rgb(255, 255, 255);
+            color: white;
             border: 2px solid blue;
-            box-shadow: 0 0 10px blue;
+            box-shadow: 0 0 20px blue;
             padding: 20px;
             border-radius: 12px;
-            margin: 30px;
+            margin: 35px;
             margin-bottom: 45px;
             background-color: rgb(15, 15, 15);
             text-align: center;
+            transition: transform 0.5s ease;
+        }
+
+        div:hover {
+            transform: scale(1.03);
+        }
+
+        footer#rtrt {
+            transition: transform 0.5s ease;
+        }
+
+        footer#rtrt:hover {
+            transform: scale(1.03);
         }
 
         h1 {
@@ -37,12 +50,13 @@
 
         p {
             text-align: center;
+            text-shadow: 0 0 20px blue;
         }
 
-        p.blue{
+        p.blue {
             color: blue;
         }
-        
+
     </style>
 </head>
 
@@ -152,10 +166,11 @@
         </p>
     </div>
 
-    <footer>
+    <footer id="rtrt">
         <p>That's it</p>
         <p>© 2026 Ryan | My Personal Website</p>
     </footer>
 
 </body>
 </html>
+
